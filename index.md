@@ -47,3 +47,14 @@ Ich wünsche dir viel Erfolg bei der Vorbereitung und freue mich, dich bald in d
 
 Hannes
 
+
+------
+
+### Impressum
+
+https://hannesmolsen.de/impressum.html
+
+### Datenschutz
+
+https://hannesmolsen.de/datenschutz.html
+
