@@ -1,3 +1,5 @@
+title: Vulnerads
+description: Unsichere Webanwendung für die Schulung "Sicherheit für Webanwendungen" 
 plugins:
   - jekyll-relative-links
 relative_links:
