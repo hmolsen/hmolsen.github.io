@@ -1,8 +1,6 @@
-# Vulnerads
-
 Moin moin,
 
-vermutlich bist du auf dieser Seite gelandet, weil du an der Schulung "Sicherheit für Webanwendungen" teilnehmen wirst. In dieser Schulung werden wir die Anwendung Vulnerads - eine sicherheitslückenreiche Version bekannter Kleinanzeigen-Webanwendungen - Stück für Stück auseinandernehmen und absichern.
+vermutlich bist du auf dieser Seite gelandet, weil du an der Schulung ["Sicherheit für Webanwendungen"](https://www.oose.de/seminar/web-app-security/) teilnehmen wirst. In dieser Schulung werden wir die Anwendung Vulnerads - eine sicherheitslückenreiche Version bekannter Kleinanzeigen-Webanwendungen - Stück für Stück auseinandernehmen und absichern.
 
 Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox erstellt, die du herunterladen und bei dir importieren musst. Ein großer Teil der Schulung findet als praktische Beispiele und Übungen in der virtuellen Maschine statt, es ist also wichtig, dass diese bei dir gut läuft.
 
@@ -33,19 +31,20 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 
 ## Troubleshooting für Windows-Hosts
 
-* Wenn die Maschine furchtbar (!) langsam läuft, dann musst du Hyper-V abschalten. Infos bekommst du zum Beispiel [hier](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) oder [hier](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html)
+* Wenn die Maschine furchtbar (!) langsam läuft, dann musst du Hyper-V abschalten. Infos bekommst du zum Beispiel [hier](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) oder [hier](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html).
 * Wenn die Maschine dann immer noch langsam läuft, dann ist mit an Sicherheit grenzender Wahrscheinlichkeit Hyper-V noch an. Das muss aber aus sein.
-* Wenn sichergestellt ist, dass Hyper-V aus ist, die Maschine aber immer noch langsam läuft, dann ist vermutlich Hyper-V doch nicht aus. Glaubt mir. Ich spreche da aus Erfahrung :-)
+* Wenn sichergestellt ist, dass Hyper-V aus ist, die Maschine aber immer noch langsam läuft, dann ist vermutlich Hyper-V doch nicht aus. Glaubt mir. Ich spreche da aus Erfahrung :-). Schau mal in `services.msc` nach, ob wirklich _alle_ Hyper-V Dienste nicht laufen.
+    ![Hyper-V Dienste sind ausgeschaltet](/servicesmsc.png "Hyper-V ist ausgeschaltet")
 
 ## Troubleshooting für MacOS-Hosts
 
-* Kommt der Fehler `Kernel driver not installed (rc=1908)`, dann wurden bei der Installation von VirtualBox die Berechtigungen vermutlich nicht richtig gesetzt. Dies kannst du in den MacOS-Einstellungen unter "Security & Privacy" nachholen. Mehr Informationen bekommst du [hier](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/)
+* Kommt der Fehler `Kernel driver not installed (rc=1908)`, dann wurden bei der Installation von VirtualBox die Berechtigungen vermutlich nicht richtig gesetzt. Dies kannst du in den MacOS-Einstellungen unter "Security & Privacy" nachholen. Mehr Informationen bekommst du [hier](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/).
 
 # Bis bald!
 
 Ich wünsche dir viel Erfolg bei der Vorbereitung und freue mich, dich bald in der Schulung zu sehen!
 
-Hannes
+**Hannes**
 
 
 ------
