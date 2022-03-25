@@ -10,7 +10,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 2. Lade dir die [virtuelle Maschine](https://cqrity.de/vm/Vulnerads_2022-03.ova) herunter (**ca. 10,5 GB**).
 3. Importiere die heruntergeladene VM in VirtualBox. Achte darauf, dass der virtuellen Machine möglichst viel, aber nicht zu viel Arbeitsspeicher zugewiesen ist. >10GB wären optimal, allerdings solltest du nicht viel mehr als die Hälfte deines Host-Arbeitsspeichers an die virtuelle Maschine vergeben.
 4. Jetzt kannst du die Maschine starten. Sie sollte in Kali Linux booten und automatisch eingeloggt sein. Falls etwas nicht klappt: Der Benutzername ist `kali` und das Passwort `kali`. Beim Systemstart werden auch Firefox und IntelliJ IDEA automatisch gestartet.
-5.  Bitte prüfe, dass aus der virtuellen Maschine Zugriff auf das Internet besteht, da einige Übungen dies voraussetzen. Öffnet hierzu beispielsweise https://www.github.com aus den Browsern Chromium und Firefox der virtuellen Maschine heraus. Gegebenenfalls passt bitte die Netzwerkadaptereinstellungen in VirtualBox oder die Proxy-Settings entsprechend der IT eures Unternehmens an. Ein Internetzugriff aus dem Betriebssystem, z.B. von der Kali-Konsole, ist nicht erforderlich.
+5.  Bitte prüfe, dass aus der virtuellen Maschine Zugriff auf das Internet besteht, da einige Übungen dies voraussetzen. Öffnet hierzu beispielsweise [https://www.github.com](https://www.github.com) aus den Browsern Chromium und Firefox der virtuellen Maschine heraus. Gegebenenfalls passt bitte die Netzwerkadaptereinstellungen in VirtualBox oder die Proxy-Settings entsprechend der IT eures Unternehmens an. Ein Internetzugriff aus dem Betriebssystem, z.B. von der Kali-Konsole, ist nicht erforderlich.
 6. In IntelliJ IDEA sollte das Projekt Vulnerads bereits inklusive der Hauptklasse de.cqrity.vulnerapp.Vulnerapp bereits geöffnet sein. Von hier aus kann die Beispielanwendung Vulnerads wie jede normale Java-Anwendung gestartet werden ( ► ). Bei einer Ähnlichen wie der folgenden Log-Ausgabe war das Starten erfolgreich:
 
         2021-10-11 20:31:13.643  INFO 16723 --- [           main]
@@ -18,7 +18,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 
         2021-10-11 20:31:13.763  INFO 16723 --- [           main]
         de.cqrity.vulnerapp.Vulnerapp            : Started Vulnerapp in 4.138 seconds (JVM running for 5.657)
-7. Nun kann im Chromium oder Firefox die URL http://vulnerads.de aufgerufen werden und es sollte eine Kleinanzeigen-Anwendung mit einem zu verkaufenden BMW und drei weiteren Anzeigen zu sehen sein.
+7. Nun kann im Chromium oder Firefox die URL [http://vulnerads.de](http://vulnerads.de) aufgerufen werden und es sollte eine Kleinanzeigen-Anwendung mit einem zu verkaufenden BMW und drei weiteren Anzeigen zu sehen sein.
 
     ![Vulnerads läuft erfolgreich im Browser](/vulnerads.png "Vulnerads läuft erfolgreich im Browser")
 
@@ -51,9 +51,9 @@ Ich wünsche dir viel Erfolg bei der Vorbereitung und freue mich, dich bald in d
 
 ### Impressum
 
-https://hannesmolsen.de/impressum.html
+[https://hannesmolsen.de/impressum.html](https://hannesmolsen.de/impressum.html)
 
 ### Datenschutz
 
-https://hannesmolsen.de/datenschutz.html
+[https://hannesmolsen.de/datenschutz.html](https://hannesmolsen.de/datenschutz.html)
 
