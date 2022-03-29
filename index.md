@@ -20,7 +20,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
         de.cqrity.vulnerapp.Vulnerapp            : Started Vulnerapp in 4.138 seconds (JVM running for 5.657)
 7. Nun kann im Chromium oder Firefox die URL [http://vulnerads.de](http://vulnerads.de) aufgerufen werden und es sollte eine Kleinanzeigen-Anwendung mit einem zu verkaufenden BMW und drei weiteren Anzeigen zu sehen sein.
 
-    ![Vulnerads läuft erfolgreich im Browser](/vulnerads.png "Vulnerads läuft erfolgreich im Browser")
+    ![Vulnerads läuft erfolgreich im Browser](img/vulnerads.png "Vulnerads läuft erfolgreich im Browser")
 
 # Troubleshooting
 
@@ -34,7 +34,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 * Wenn die Maschine furchtbar (!) langsam läuft, dann musst du Hyper-V abschalten. Infos bekommst du zum Beispiel [hier](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) oder [hier](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html).
 * Wenn die Maschine dann immer noch langsam läuft, dann ist mit an Sicherheit grenzender Wahrscheinlichkeit Hyper-V noch an. Das muss aber aus sein.
 * Wenn sichergestellt ist, dass Hyper-V aus ist, die Maschine aber immer noch langsam läuft, dann ist vermutlich Hyper-V doch nicht aus. Glaubt mir. Ich spreche da aus Erfahrung :-). Schau mal in `services.msc` nach, ob wirklich _alle_ Hyper-V Dienste nicht laufen.
-    ![Hyper-V Dienste sind ausgeschaltet](/servicesmsc.png "Hyper-V ist ausgeschaltet")
+    ![Hyper-V Dienste sind ausgeschaltet](img/servicesmsc.png "Hyper-V ist ausgeschaltet")
 
 ## Troubleshooting für MacOS-Hosts
 
