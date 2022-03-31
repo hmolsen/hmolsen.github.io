@@ -8,7 +8,7 @@ Moin moin,
 
 you most likely visited this page, because you are going to participate in our training ["Security for Webapplications"](https://oose.com/training/online-training-security-for-web-applications-in-english). As part of this training you will first tear apart and then secure a vulnerability-infested classified ads application called _Vulnerads_.
 
-For the practical excercises of this training I have prepared everything you need inside a virtual machine for Oracle VirtualBox. You need to download the VM and import it into your VirtualBox before the training, to make sure that you can follow all the fun excercises smoothly.
+For the practical exercises of this training I have prepared everything you need inside a virtual machine for Oracle VirtualBox. You need to download the VM and import it into your VirtualBox before the training, to make sure that you can follow all the fun exercises smoothly.
 
 # Step by Step
 
@@ -16,7 +16,7 @@ For the practical excercises of this training I have prepared everything you nee
 2. Download the [virtual machine image](https://vulnerads.de/vm/) (**ca. 10,5 GB**).
 3. Import the downloaded VM into VirtualBox. The VM needs an appropriate amount of memory. Appropriate? I suggest > 10GB, but it must not take more than roughly half of your total memory, to spare some bytes for your host operating system.
 4. Now you can go ahead and boot into the machine. It should boot Kali Linux and you should be automatically logged in. Should something unexpected happen and you need the username and password, it's simply `kali` and `kali`. On boot you will see Firefox and IntelliJ IDEA are automatically started.
-5. Please verify that your virtual machine is able to access the internet from the browser, as this is a requirement for some of the excercises. You can open [https://www.github.com](https://www.github.com) from Chromium and Firefox to make sure everything works. If you are behind a company proxy, it might be necessary to adjust settings in the browsers. Access from the operating system, terminal, IDE, etc. is not necessary.
+5. Please verify that your virtual machine is able to access the internet from the browser, as this is a requirement for some of the exercises. You can open [https://www.github.com](https://www.github.com) from Chromium and Firefox to make sure everything works. If you are behind a company proxy, it might be necessary to adjust settings in the browsers. Access from the operating system, terminal, IDE, etc. is not necessary.
 6. In IntelliJ IDEA the project Vulnerads should be already open, including the main class `de.cqrity.vulnerapp.Vulnerapp`. From there you can start the Vulnerads application like a normal Java application ( ► ). You should see a log output similar to this:
 
         2021-10-11 20:31:13.643  INFO 16723 --- [           main]
@@ -27,7 +27,7 @@ For the practical excercises of this training I have prepared everything you nee
 
 7. Now you can open the URL [http://vulnerads.de](http://vulnerads.de) from Firefox or Chromium within the virtual machine and you should see the classified ads application with four ads:
 
-    ![Vulnerads runs sucessfully](img/vulnerads.png "Vulnerads runs sucessfully")
+    ![Vulnerads runs successfully](img/vulnerads.png "Vulnerads runs successfully")
 
 # Troubleshooting
 
@@ -40,7 +40,7 @@ For the practical excercises of this training I have prepared everything you nee
 
 * If the machine is crazy (!) slow, then you need to disable Hyper-V on your Windows Host. You can find information [here](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) or [here](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html).
 * If the machine is still running slow, then it is highly likely that Hyper-V is still activated. It needs to be deactivated.
-* If you made sure that Hyper-V is not running, and the machine is stil incredibly slow, then I it could be that Hyper-V is actually still running. Trust me. I've been there :-). You can open `services.msc` to verify that _none_ of the Hyper-V services is running:
+* If you made sure that Hyper-V is not running, and the machine is still incredibly slow, then I it could be that Hyper-V is actually still running. Trust me. I've been there :-). You can open `services.msc` to verify that _none_ of the Hyper-V services is running:
     ![Hyper-V Services are not running](img/servicesmsc.png "Hyper-V Services are not running")
 
 ## Troubleshooting for MacOS-Hosts
@@ -53,7 +53,6 @@ I hope that your setup runs through smoothly, if you experience any unexpected e
 
 **Hannes**
 
-
 ------
 
 ### Imprint
@@ -63,4 +62,5 @@ I hope that your setup runs through smoothly, if you experience any unexpected e
 ### Privacy
 
 [https://hannesmolsen.de/datenschutz.html](https://hannesmolsen.de/datenschutz.html)
+
 
