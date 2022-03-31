@@ -1,4 +1,8 @@
-# Vulnerads
+# Welcome to Vulnerads
+
+> Diese Seite gibt es auch auf [Deutsch](/?lang=de)
+
+-----
 
 Moin moin,
 
