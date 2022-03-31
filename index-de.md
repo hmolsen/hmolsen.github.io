@@ -32,7 +32,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 
 ## Generelles Troubleshooting
 
-* Wenn die Maschine beim starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 6.1.32.
+* Wenn die Maschine beim Starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 6.1.32.
 * Wenn das Bild in der virtuellen Maschine flackert, dann hilft es manchmal den Grafikadapter umzustellen, zum Beispiel auf VBoxSVGA.
 * Wenn das Bild in der virtuellen Maschine _unfassbar klein_ oder **wahnsinnig groß** ist, dann liegt das an den DPI des verwendeten Bildschirms. Die Skalierung der virtuellen Maschine kannst du im VirtualBox-Fenster unter "Anzeige" -> "Virtueller Monitor 1" einstellen.
 
