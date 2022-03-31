@@ -13,7 +13,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 # Schritt für Schritt
 
 1. Lade dir die aktuelle Version von [VirtualBox](https://www.virtualbox.org/wiki/Downloads) für dein Betriebssystem herunter und installiere es.
-2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/Vulnerads_2022-03.ova) herunter (**ca. 10,5 GB**).
+2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/) herunter (**ca. 10,5 GB**).
 3. Importiere die heruntergeladene VM in VirtualBox. Achte darauf, dass der virtuellen Machine möglichst viel, aber nicht zu viel Arbeitsspeicher zugewiesen ist. >10GB wären optimal, allerdings solltest du nicht viel mehr als die Hälfte deines Host-Arbeitsspeichers an die virtuelle Maschine vergeben.
 4. Jetzt kannst du die Maschine starten. Sie sollte in Kali Linux booten und automatisch eingeloggt sein. Falls etwas nicht klappt: Der Benutzername ist `kali` und das Passwort `kali`. Beim Systemstart werden auch Firefox und IntelliJ IDEA automatisch gestartet.
 5.  Bitte prüfe, dass aus der virtuellen Maschine Zugriff auf das Internet besteht, da einige Übungen dies voraussetzen. Öffnet hierzu beispielsweise [https://www.github.com](https://www.github.com) aus den Browsern Chromium und Firefox der virtuellen Maschine heraus. Gegebenenfalls passt bitte die Netzwerkadaptereinstellungen in VirtualBox oder die Proxy-Settings entsprechend der IT eures Unternehmens an. Ein Internetzugriff aus dem Betriebssystem, z.B. von der Kali-Konsole, ist nicht erforderlich.
