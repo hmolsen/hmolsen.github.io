@@ -1,61 +1,62 @@
+# Vulnerads
+
 Moin moin,
 
-you are most likely here.
+you most likely visited this page, because you are going to participate in our training ["Security for Webapplications"](https://oose.com/training/online-training-security-for-web-applications-in-english). As part of this training you will first tear apart and then secure a vulnerability-infested classified ads application called _Vulnerads_.
 
-vermutlich bist du auf dieser Seite gelandet, weil du an der Schulung ["Sicherheit für Webanwendungen"](https://www.oose.de/seminar/web-app-security/) teilnehmen wirst. In dieser Schulung werden wir die Anwendung Vulnerads - eine sicherheitslückenreiche Version bekannter Kleinanzeigen-Webanwendungen - Stück für Stück auseinandernehmen und absichern.
+For the practical excercises of this training I have prepared everything you need inside a virtual machine for Oracle VirtualBox. You need to download the VM and import it into your VirtualBox before the training, to make sure that you can follow all the fun excercises smoothly.
 
-Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox erstellt, die du herunterladen und bei dir importieren musst. Ein großer Teil der Schulung findet als praktische Beispiele und Übungen in der virtuellen Maschine statt, es ist also wichtig, dass diese bei dir gut läuft.
+# Step by Step
 
-# Schritt für Schritt
-
-1. Lade dir die aktuelle Version von [VirtualBox](https://www.virtualbox.org/wiki/Downloads) für dein Betriebssystem herunter und installiere es.
-2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/Vulnerads_2022-03.ova) herunter (**ca. 10,5 GB**).
-3. Importiere die heruntergeladene VM in VirtualBox. Achte darauf, dass der virtuellen Machine möglichst viel, aber nicht zu viel Arbeitsspeicher zugewiesen ist. >10GB wären optimal, allerdings solltest du nicht viel mehr als die Hälfte deines Host-Arbeitsspeichers an die virtuelle Maschine vergeben.
-4. Jetzt kannst du die Maschine starten. Sie sollte in Kali Linux booten und automatisch eingeloggt sein. Falls etwas nicht klappt: Der Benutzername ist `kali` und das Passwort `kali`. Beim Systemstart werden auch Firefox und IntelliJ IDEA automatisch gestartet.
-5.  Bitte prüfe, dass aus der virtuellen Maschine Zugriff auf das Internet besteht, da einige Übungen dies voraussetzen. Öffnet hierzu beispielsweise [https://www.github.com](https://www.github.com) aus den Browsern Chromium und Firefox der virtuellen Maschine heraus. Gegebenenfalls passt bitte die Netzwerkadaptereinstellungen in VirtualBox oder die Proxy-Settings entsprechend der IT eures Unternehmens an. Ein Internetzugriff aus dem Betriebssystem, z.B. von der Kali-Konsole, ist nicht erforderlich.
-6. In IntelliJ IDEA sollte das Projekt Vulnerads bereits inklusive der Hauptklasse de.cqrity.vulnerapp.Vulnerapp bereits geöffnet sein. Von hier aus kann die Beispielanwendung Vulnerads wie jede normale Java-Anwendung gestartet werden ( ► ). Bei einer Ähnlichen wie der folgenden Log-Ausgabe war das Starten erfolgreich:
+1. Download the current version of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for your host operating system and install it.
+2. Download the [virtual machine image](https://vulnerads.de/vm/Vulnerads_2022-03.ova) (**ca. 10,5 GB**). The password is provided in the invite-Email!
+3. Import the downloaded VM into VirtualBox. The VM needs an appropriate amount of memory. Appropriate? I suggest > 10GB, but it must not take more than roughly half of your total memory, to spare some bytes for your host operating system.
+4. Now you can go ahead and boot into the machine. It should boot Kali Linux and you should be automatically logged in. Should something unexpected happen and you need the username and password, it's simply `kali` and `kali`. On boot you will see Firefox and IntelliJ IDEA are automatically started.
+5. Please verify that your virtual machine is able to access the internet from the browser, as this is a requirement for some of the excercises. You can open [https://www.github.com](https://www.github.com) from Chromium and Firefox to make sure everything works. If you are behind a company proxy, it might be necessary to adjust settings in the browsers. Access from the operating system, terminal, IDE, etc. is not necessary.
+6. In IntelliJ IDEA the project Vulnerads should be already open, including the main class `de.cqrity.vulnerapp.Vulnerapp`. From there you can start the Vulnerads application like a normal Java application ( ► ). You should see a log output similar to this:
 
         2021-10-11 20:31:13.643  INFO 16723 --- [           main]
         s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080/http
 
         2021-10-11 20:31:13.763  INFO 16723 --- [           main]
         de.cqrity.vulnerapp.Vulnerapp            : Started Vulnerapp in 4.138 seconds (JVM running for 5.657)
-7. Nun kann im Chromium oder Firefox die URL [http://vulnerads.de](http://vulnerads.de) aufgerufen werden und es sollte eine Kleinanzeigen-Anwendung mit einem zu verkaufenden BMW und drei weiteren Anzeigen zu sehen sein.
 
-    ![Vulnerads läuft erfolgreich im Browser](img/vulnerads.png "Vulnerads läuft erfolgreich im Browser")
+7. Now you can open the URL [http://vulnerads.de](http://vulnerads.de) from Firefox or Chromium within the virtual machine and you should see the classified ads application with four ads:
+
+    ![Vulnerads runs sucessfully](img/vulnerads.png "Vulnerads runs sucessfully")
 
 # Troubleshooting
 
-## Generelles Troubleshooting
+## General Troubleshooting
 
-* Wenn das Bild in der virtuellen Maschine flackert, dann hilft es manchmal den Grafikadapter umzustellen, zum Beispiel auf VBoxSVGA.
-* Wenn das Bild in der virtuellen Maschine _unfassbar klein_ oder **wahnsinnig groß** ist, dann liegt das an den DPI des verwendeten Bildschirms. Die Skalierung der virtuellen Maschine kannst du im VirtualBox-Fenster unter "Anzeige" -> "Virtueller Monitor 1" einstellen.
+* If the image of the virtual machine is unstable, possibly flickering, it sometimes helps to change the graphics adapter in the VM-Settings, e.g., to `VBoxSVGA`.
+* If the image of the virtual machine is _incredibly small_ or **enormously large**, then the reason is the DPI-setting of the VM, which does not fit to your monitor. You can change that scaling in the VirtualBox-Window under "View" -> "Virtual Monitor 1".
 
-## Troubleshooting für Windows-Hosts
+## Troubleshooting for Windows-Hosts
 
-* Wenn die Maschine furchtbar (!) langsam läuft, dann musst du Hyper-V abschalten. Infos bekommst du zum Beispiel [hier](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) oder [hier](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html).
-* Wenn die Maschine dann immer noch langsam läuft, dann ist mit an Sicherheit grenzender Wahrscheinlichkeit Hyper-V noch an. Das muss aber aus sein.
-* Wenn sichergestellt ist, dass Hyper-V aus ist, die Maschine aber immer noch langsam läuft, dann ist vermutlich Hyper-V doch nicht aus. Glaubt mir. Ich spreche da aus Erfahrung :-). Schau mal in `services.msc` nach, ob wirklich _alle_ Hyper-V Dienste nicht laufen.
-    ![Hyper-V Dienste sind ausgeschaltet](img/servicesmsc.png "Hyper-V ist ausgeschaltet")
+* If the machine is crazy (!) slow, then you need to disable Hyper-V on your Windows Host. You can find information [here](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) or [here](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html).
+* If the machine is still running slow, then it is highly likely that Hyper-V is still activated. It needs to be deactivated.
+* If you made sure that Hyper-V is not running, and the machine is stil incredibly slow, then I it could be that Hyper-V is actually still running. Trust me. I've been there :-). You can open `services.msc` to verify that _none_ of the Hyper-V services is running:
+    ![Hyper-V Services are not running](img/servicesmsc.png "Hyper-V Services are not running")
 
-## Troubleshooting für MacOS-Hosts
+## Troubleshooting for MacOS-Hosts
 
-* Kommt der Fehler `Kernel driver not installed (rc=1908)`, dann wurden bei der Installation von VirtualBox die Berechtigungen vermutlich nicht richtig gesetzt. Dies kannst du in den MacOS-Einstellungen unter "Security & Privacy" nachholen. Mehr Informationen bekommst du [hier](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/).
+* If you experience the error `Kernel driver not installed (rc=1908)`, then VirtualBox is missing some rights to be executed correctly. You can fix this in the MacOS settings under "Security & Privacy". More information can be found [here](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/).
 
-# Bis bald!
+# See you!
 
-Ich wünsche dir viel Erfolg bei der Vorbereitung und freue mich, dich bald in der Schulung zu sehen!
+I hope that your setup runs through smoothly, if you experience any unexpected errors, don't hesitate to contact me! I am looking forward to seeing you soon in the training!
 
 **Hannes**
 
 
 ------
 
-### Impressum
+### Imprint
 
 [https://hannesmolsen.de/impressum.html](https://hannesmolsen.de/impressum.html)
 
-### Datenschutz
+### Privacy
 
 [https://hannesmolsen.de/datenschutz.html](https://hannesmolsen.de/datenschutz.html)
 
