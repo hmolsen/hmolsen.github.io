@@ -33,6 +33,7 @@ For the practical exercises of this training I have prepared everything you need
 
 ## General Troubleshooting
 
+* If the machine stays completely black on booting, then one reason is an older VirtualBox Version. Please make sure that you have installed the latest VirtualBox version! The machine was created using VirtualBox 6.1.32 and is 100% incompatible to VirtualBox 5.x, but sometimes I also see issues with older VirtualBox 6.1.x versions.
 * If the image of the virtual machine is unstable, possibly flickering, it sometimes helps to change the graphics adapter in the VM-Settings, e.g., to `VBoxSVGA`.
 * If the image of the virtual machine is _incredibly small_ or **enormously large**, then the reason is the DPI-setting of the VM, which does not fit to your monitor. You can change that scaling in the VirtualBox-Window under "View" -> "Virtual Monitor 1".
 
@@ -46,6 +47,7 @@ For the practical exercises of this training I have prepared everything you need
 ## Troubleshooting for MacOS-Hosts
 
 * If you experience the error `Kernel driver not installed (rc=1908)`, then VirtualBox is missing some rights to be executed correctly. You can fix this in the MacOS settings under "Security & Privacy". More information can be found [here](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/).
+* Please note the difference in the keyboard layout between your MacOS Host and the Guest OS Kali Linux. You can change the keyboard layout via the Kali Linux settings as described [here](https://mayadevbe.me/posts/linux_keyboard_layout/)
 
 # See you!
 

@@ -32,6 +32,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 
 ## Generelles Troubleshooting
 
+* Wenn die Maschine beim starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 6.1.32.
 * Wenn das Bild in der virtuellen Maschine flackert, dann hilft es manchmal den Grafikadapter umzustellen, zum Beispiel auf VBoxSVGA.
 * Wenn das Bild in der virtuellen Maschine _unfassbar klein_ oder **wahnsinnig groß** ist, dann liegt das an den DPI des verwendeten Bildschirms. Die Skalierung der virtuellen Maschine kannst du im VirtualBox-Fenster unter "Anzeige" -> "Virtueller Monitor 1" einstellen.
 
@@ -45,6 +46,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 ## Troubleshooting für MacOS-Hosts
 
 * Kommt der Fehler `Kernel driver not installed (rc=1908)`, dann wurden bei der Installation von VirtualBox die Berechtigungen vermutlich nicht richtig gesetzt. Dies kannst du in den MacOS-Einstellungen unter "Security & Privacy" nachholen. Mehr Informationen bekommst du [hier](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/).
+* Bitte beachte, dass dein Mac ein anderes Tastaturlayout hat als Kali Linux. Du kannst das Keyboard-Layout der virtuellen Maschine aber auf eine Mac-Tastatur umstellen. Das ist [hier](https://mayadevbe.me/posts/linux_keyboard_layout/) beschrieben.
 
 # Bis bald!
 
