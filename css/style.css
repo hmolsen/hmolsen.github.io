@@ -1,0 +1,9 @@
+.markdown-body {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 15px;
+}
+pre[class*=language-]>code {
+	border: none;
+	box-shadow: none;
+}
