@@ -45,6 +45,7 @@ Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox er
 
 ## Troubleshooting für MacOS-Hosts
 
+* Wenn in der virtuellen Maschine die Applikationen wie IntelliJ oder der Browser immer wieder mit einem Segfault abstürzen, dann mag das am [Intel Power Gadget](https://www.virtualbox.org/ticket/20076) liegen. Das muss man dann abschalten, dann geht's.
 * Kommt der Fehler `Kernel driver not installed (rc=1908)`, dann wurden bei der Installation von VirtualBox die Berechtigungen vermutlich nicht richtig gesetzt. Dies kannst du in den MacOS-Einstellungen unter "Security & Privacy" nachholen. Mehr Informationen bekommst du [hier](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/).
 * Bitte beachte, dass dein Mac ein anderes Tastaturlayout hat als Kali Linux. Du kannst das Keyboard-Layout der virtuellen Maschine aber auf eine Mac-Tastatur umstellen. Das ist [hier](https://mayadevbe.me/posts/linux_keyboard_layout/) beschrieben.
 

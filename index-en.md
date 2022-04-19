@@ -46,6 +46,7 @@ For the practical exercises of this training I have prepared everything you need
 
 ## Troubleshooting for MacOS-Hosts
 
+* If the applications like IntelliJ or the browser randomly crash with a segfault inside the VM, this might be caused by the [Intel Power Gadget](https://www.virtualbox.org/ticket/20076). Once disabled, this should not happen anymore.
 * If you experience the error `Kernel driver not installed (rc=1908)`, then VirtualBox is missing some rights to be executed correctly. You can fix this in the MacOS settings under "Security & Privacy". More information can be found [here](https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/).
 * Please note the difference in the keyboard layout between your MacOS Host and the Guest OS Kali Linux. You can change the keyboard layout via the Kali Linux settings as described [here](https://mayadevbe.me/posts/linux_keyboard_layout/)
 
