@@ -6,9 +6,9 @@
 
 Moin moin,
 
-vermutlich bist du auf dieser Seite gelandet, weil du an der Schulung ["Sicherheit für Webanwendungen"](https://www.oose.de/seminar/web-app-security/) teilnehmen wirst. In dieser Schulung werden wir die Anwendung Vulnerads - eine sicherheitslückenreiche Version bekannter Kleinanzeigen-Webanwendungen - Stück für Stück auseinandernehmen und absichern.
+vermutlich bist du auf dieser Seite gelandet, weil du an der Schulung ["Sicherheit für Webanwendungen"](https://www.oose.de/seminar/web-app-security/) oder ["Sichere Architekturen"](https://www.oose.de/seminar/sichere-architekturen/) teilnehmen wirst. 
 
-Für die Schulung habe ich dir eine virtuelle Maschine für Oracle VirtualBox erstellt, die du herunterladen und bei dir importieren musst. Ein großer Teil der Schulung findet als praktische Beispiele und Übungen in der virtuellen Maschine statt, es ist also wichtig, dass diese bei dir gut läuft.
+Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBox erstellt, die du herunterladen und bei dir importieren musst. Wirst du _Sicherheit für Webanwendungen_ besuchen? Dann findet ein großer Teil der Schulung als praktische Beispiele und Übungen in der virtuellen Maschine statt, es ist also wichtig, dass diese bei dir gut läuft. Wirst du _Sichere Architekturen_ besuchen? Dann sprecht euch im Team gerne ab: ihr werdet immer zu zweit oder zu dritt an den Übungen sitzen, es muss also nicht unbedingt bei jedem die Vulnerads-VM laufen.
 
 # Schritt für Schritt
 
