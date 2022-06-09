@@ -6,9 +6,9 @@
 
 Moin moin,
 
-you most likely visited this page, because you are going to participate in our training ["Security for Web Applications"](https://oose.com/training/online-training-security-for-web-applications-in-english). As part of this training you will first tear apart and then secure a vulnerability-infested classified ads application called _Vulnerads_.
+you most likely visited this page, because you are going to participate in our training ["Security for Web Applications"](https://oose.com/training/online-training-security-for-web-applications-in-english) or ["Secure Architectures"](https://www.oose.de/seminar/sichere-architekturen/). As part of these training you will use a vulnerability-infested classified ads application called _Vulnerads_.
 
-For the practical exercises of this training I have prepared everything you need inside a virtual machine for Oracle VirtualBox. You need to download the VM and import it into your VirtualBox before the training, to make sure that you can follow all the fun exercises smoothly.
+For the practical exercises of this training I have prepared everything you need inside a virtual machine for Oracle VirtualBox. If you are participating in _Security for Web Applications_, then you need to download the VM and import it into your VirtualBox before the training, to make sure that you can follow all the fun exercises smoothly. If you are participating in _Secure Architectures_ you should discuss with your team who is going to prepare the virtual machine. Usually 3-4 machines are sufficient for a training, as you will be working in groups of 2 to 4 people.
 
 # Step by Step
 
