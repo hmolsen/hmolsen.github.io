@@ -6,17 +6,20 @@
 
 Moin moin,
 
-vermutlich bist du auf dieser Seite gelandet, weil du an der Schulung ["Sicherheit für Webanwendungen"](https://www.oose.de/seminar/web-app-security/) oder ["Sichere Architekturen"](https://www.oose.de/seminar/sichere-architekturen/) teilnehmen wirst. 
+vermutlich bist du auf dieser Seite gelandet, weil du an der Schulung ["Sicherheit für Webanwendungen"](https://www.oose.de/seminar/web-app-security/), ["Web-Authentifizierung"](https://www.oose.de/seminar/web-authentifizierung/) oder ["Sichere Architekturen"](https://www.oose.de/seminar/sichere-architekturen/) teilnehmen wirst. 
 
-Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBox erstellt, die du herunterladen und bei dir importieren musst. Wirst du _Sicherheit für Webanwendungen_ besuchen? Dann findet ein großer Teil der Schulung als praktische Beispiele und Übungen in der virtuellen Maschine statt, es ist also wichtig, dass diese bei dir gut läuft. Wirst du _Sichere Architekturen_ besuchen? Dann sprecht euch im Team gerne ab: ihr werdet immer zu zweit oder zu dritt an den Übungen sitzen, es muss also nicht unbedingt bei jedem die Vulnerads-VM laufen.
+Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBox erstellt, die du herunterladen und bei dir importieren musst. Wirst du _Sicherheit für Webanwendungen_ oder _Web-Authentifizierung_ besuchen? Dann findet ein großer Teil der Schulung als praktische Beispiele und Übungen in der virtuellen Maschine statt, es ist also wichtig, dass diese bei dir gut läuft. Wirst du _Sichere Architekturen_ besuchen? Dann sprecht euch im Team gerne ab: ihr werdet immer zu zweit oder zu dritt an den Übungen sitzen, es muss also nicht unbedingt bei jedem die Vulnerads-VM laufen.
 
 # Schritt für Schritt
 
 1. Lade dir die aktuelle Version von [VirtualBox](https://www.virtualbox.org/wiki/Downloads) für dein Betriebssystem herunter und installiere es.
-2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/) herunter (**ca. 10,5 GB**).
+2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/) herunter (**ca. 10,9 GB**).
 3. Importiere die heruntergeladene VM in VirtualBox. Achte darauf, dass der virtuellen Machine möglichst viel, aber nicht zu viel Arbeitsspeicher zugewiesen ist. >10GB wären optimal, allerdings solltest du nicht viel mehr als die Hälfte deines Host-Arbeitsspeichers an die virtuelle Maschine vergeben.
 4. Jetzt kannst du die Maschine starten. Sie sollte in Kali Linux booten und automatisch eingeloggt sein. Falls etwas nicht klappt: Der Benutzername ist `kali` und das Passwort `kali`. Beim Systemstart werden auch Firefox und IntelliJ IDEA automatisch gestartet.
 5.  Bitte prüfe, dass aus der virtuellen Maschine Zugriff auf das Internet besteht, da einige Übungen dies voraussetzen. Öffnet hierzu beispielsweise [https://www.github.com](https://www.github.com) aus den Browsern Chromium und Firefox der virtuellen Maschine heraus. Gegebenenfalls passt bitte die Netzwerkadaptereinstellungen in VirtualBox oder die Proxy-Settings entsprechend der IT eures Unternehmens an. Ein Internetzugriff aus dem Betriebssystem, z.B. von der Kali-Konsole, ist nicht erforderlich.
+
+(Die folgenden Schritte kannst du überspringen, wenn du die Schulung _Web-Authentifizierung_ besuchst, in der Schulung werden wir die Anwendung Vulnerads nicht verwenden.)
+
 6. In IntelliJ IDEA sollte das Projekt Vulnerads bereits inklusive der Hauptklasse de.cqrity.vulnerapp.Vulnerapp bereits geöffnet sein. Von hier aus kann die Beispielanwendung Vulnerads wie jede normale Java-Anwendung gestartet werden ( ► ). Bei einer Ähnlichen wie der folgenden Log-Ausgabe war das Starten erfolgreich:
 
         2021-10-11 20:31:13.643  INFO 16723 --- [           main]
@@ -32,7 +35,7 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
 
 ## Generelles Troubleshooting
 
-* Wenn die Maschine beim Starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 6.1.32.
+* Wenn die Maschine beim Starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 6.1.38.
 * Wenn das Bild in der virtuellen Maschine flackert, dann hilft es manchmal den Grafikadapter umzustellen, zum Beispiel auf VBoxSVGA.
 * Wenn das Bild in der virtuellen Maschine _unfassbar klein_ oder **wahnsinnig groß** ist, dann liegt das an den DPI des verwendeten Bildschirms. Die Skalierung der virtuellen Maschine kannst du im VirtualBox-Fenster unter "Anzeige" -> "Virtueller Monitor 1" einstellen.
 
