@@ -6,17 +6,20 @@
 
 Moin moin,
 
-you most likely visited this page, because you are going to participate in our training ["Security for Web Applications"](https://oose.com/training/online-training-security-for-web-applications-in-english) or ["Secure Architectures"](https://www.oose.de/seminar/sichere-architekturen/). As part of these training you will use a vulnerability-infested classified ads application called _Vulnerads_.
+you most likely visited this page, because you are going to participate in our training ["Security for Web Applications"](https://oose.com/training/online-training-security-for-web-applications-in-english), ["Web-Authentication"](https://www.oose.de/seminar/web-authentifizierung/), or ["Secure Architectures"](https://www.oose.de/seminar/sichere-architekturen/).
 
-For the practical exercises of this training I have prepared everything you need inside a virtual machine for Oracle VirtualBox. If you are participating in _Security for Web Applications_, then you need to download the VM and import it into your VirtualBox before the training, to make sure that you can follow all the fun exercises smoothly. If you are participating in _Secure Architectures_ you should discuss with your team who is going to prepare the virtual machine. Usually 3-4 machines are sufficient for a training, as you will be working in groups of 2 to 4 people.
+For the practical exercises of this training I have prepared everything you need inside a virtual machine for Oracle VirtualBox. If you are participating in _Security for Web Applications_ or _Web-Authentication_ then you need to download the VM and import it into your VirtualBox before the training, to make sure that you can follow all the fun exercises smoothly. If you are participating in _Secure Architectures_ you should discuss with your team who is going to prepare the virtual machine. Usually 3-4 machines are sufficient for a training, as you will be working in groups of 2 to 4 people.
 
 # Step by Step
 
 1. Download the current version of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for your host operating system and install it.
-2. Download the [virtual machine image](https://vulnerads.de/vm/) (**ca. 10,5 GB**).
+2. Download the [virtual machine image](https://vulnerads.de/vm/) (**ca. 10,9 GB**).
 3. Import the downloaded VM into VirtualBox. The VM needs an appropriate amount of memory. Appropriate? I suggest > 10GB, but it must not take more than roughly half of your total memory, to spare some bytes for your host operating system.
 4. Now you can go ahead and boot into the machine. It should boot Kali Linux and you should be automatically logged in. Should something unexpected happen and you need the username and password, it's simply `kali` and `kali`. On boot you will see Firefox and IntelliJ IDEA are automatically started.
 5. Please verify that your virtual machine is able to access the internet from the browser, as this is a requirement for some of the exercises. You can open [https://www.github.com](https://www.github.com) from Chromium and Firefox to make sure everything works. If you are behind a company proxy, it might be necessary to adjust settings in the browsers. Access from the operating system, terminal, IDE, etc. is not necessary.
+
+The following steps are not necessary, if you are participating in the training _Web-Authentication_, as we won't use the application Vulnerads there.
+
 6. In IntelliJ IDEA the project Vulnerads should be already open, including the main class `de.cqrity.vulnerapp.Vulnerapp`. From there you can start the Vulnerads application like a normal Java application ( ► ). You should see a log output similar to this:
 
         2021-10-11 20:31:13.643  INFO 16723 --- [           main]
