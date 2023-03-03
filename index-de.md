@@ -45,10 +45,10 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
   2. Die Prozesse killen und neustarten:  
     Auflisten, was gerade läuft: `ps aux www | grep VBoxClient --`  
     Alle beenden: `killall VBoxClient`  
-    Wahlweise neu starten (mindestens aber diese Dienste):
-      `VBoxClient --clipboard`
-      `VBoxClient --vmsvga`
-      `VBoxClient --seamless`
+    Wahlweise neu starten (mindestens aber diese Dienste):  
+      `VBoxClient --clipboard`  
+      `VBoxClient --vmsvga`  
+      `VBoxClient --seamless`  
 
   3. Die ganze VM neustarten. 
 
