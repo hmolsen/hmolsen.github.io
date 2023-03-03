@@ -43,9 +43,12 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
   1. Im "Geräte"-Kontextmenü beides (Gemeinsame Zwischenablage, Drag und Drop) jeweils aus- und wieder anschalten, oder
 
   2. Die Prozesse killen und neustarten:  
-    Auflisten: `ps aux www | grep VBoxClient --`  
-    Mit PID beenden: `kill -9 PID`  
-    Neustarten: `VBoxClient-all`  
+    Auflisten, was gerade läuft: `ps aux www | grep VBoxClient --`  
+    Alle beenden: `killall VBoxClient`  
+    Wahlweise neu starten (mindestens aber diese Dienste):
+      `VBoxClient --clipboard`
+      `VBoxClient --vmsvga`
+      `VBoxClient --seamless`
 
   3. Die ganze VM neustarten. 
 

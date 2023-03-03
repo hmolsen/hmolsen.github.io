@@ -45,8 +45,11 @@ The following steps are not necessary, if you are participating in the training 
 
   2. Kill the processes and restart them:  
     List them: `ps aux www | grep VBoxClient --`  
-    Kill them: `kill -9 PID`  
-    Start them: `VBoxClient-all`  
+    Kill them: `killall VBoxClient`  
+    Start them:
+      `VBoxClient --clipboard`
+      `VBoxClient --vmsvga`
+      `VBoxClient --seamless`  
 
   3. Reboot the entire VM. 
 
