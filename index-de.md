@@ -12,7 +12,7 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
 
 # Schritt für Schritt
 
-1. Lade dir die aktuelle Version von [VirtualBox](https://www.virtualbox.org/wiki/Downloads) für dein Betriebssystem herunter und installiere es.
+1. Lade dir die aktuelle Version von [VirtualBox](https://www.virtualbox.org/wiki/Downloads) für dein Betriebssystem herunter und installiere es. Du hast nur einen Mac mit ARM-Prozessor zur Verfügung? Dann melde dich bitte bei uns, dafür haben wir natürlich auch eine Lösung.
 2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/) herunter (**ca. 15 GB**).
 3. Importiere die heruntergeladene VM in VirtualBox. Achte darauf, dass der virtuellen Machine möglichst viel, aber nicht zu viel Arbeitsspeicher zugewiesen ist. >10GB wären optimal, allerdings solltest du nicht viel mehr als die Hälfte deines Host-Arbeitsspeichers an die virtuelle Maschine vergeben.
 4. Jetzt kannst du die Maschine starten. Sie sollte in Kali Linux booten und automatisch eingeloggt sein. Falls etwas nicht klappt: Der Benutzername ist `kali` und das Passwort `kali`. Beim Systemstart werden auch Firefox und IntelliJ IDEA automatisch gestartet.
