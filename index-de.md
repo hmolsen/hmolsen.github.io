@@ -38,7 +38,7 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
 * Wenn die Maschine beim Starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 6.1.38.
 * Wenn das Bild in der virtuellen Maschine flackert, dann hilft es manchmal den Grafikadapter umzustellen, zum Beispiel auf VBoxSVGA.
 * Wenn das Bild in der virtuellen Maschine _unfassbar klein_ oder **wahnsinnig groß** ist, dann liegt das an den DPI des verwendeten Bildschirms. Die Skalierung der virtuellen Maschine kannst du im VirtualBox-Fenster unter "Anzeige" -> "Virtueller Monitor 1" einstellen.
-* Wenn in der virtuellen Maschine "die Maus nicht geht", du also nicht klicken kannst, dann ist das vermutlich die linke obere Ecke der VM, in die du nicht klicken kannst. Vermutlich kannst du unten rechts nocht klicken. Dies ist ein bekannter Bug in den VirtualBox Client Tools für Drag-und-Drop und geteiltes Clipboard. Du kannst entweder
+* Wenn in der virtuellen Maschine "die Maus nicht geht", du also nicht klicken kannst, dann ist das vermutlich die linke obere Ecke der VM, in die du nicht klicken kannst. Vermutlich kannst du unten rechts noch klicken. Dies ist ein bekannter Bug in den VirtualBox Client Tools für Drag-und-Drop und geteiltes Clipboard. Du kannst entweder
 
   1. Im "Geräte"-Kontextmenü beides (Gemeinsame Zwischenablage, Drag und Drop) jeweils aus- und wieder anschalten, oder
 
