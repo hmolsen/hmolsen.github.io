@@ -36,7 +36,7 @@ The following steps are not necessary, if you are participating in the training 
 
 ## General Troubleshooting
 
-* If the machine stays completely black on booting, then one reason is an older VirtualBox Version. Please make sure that you have installed the latest VirtualBox version! The machine was created using VirtualBox 6.1.38 and is 100% incompatible to VirtualBox 5.x, but sometimes I also see issues with older VirtualBox 6.1.x versions.
+* If the machine stays completely black on booting, then one reason is an older VirtualBox Version. Please make sure that you have installed the latest VirtualBox version! The machine was created using VirtualBox 7.0.14 and is 100% incompatible to VirtualBox 5.x, but sometimes I also see issues with older VirtualBox 6.1.x versions.
 * If the image of the virtual machine is unstable, possibly flickering, it sometimes helps to change the graphics adapter in the VM-Settings, e.g., to `VBoxSVGA`.
 * If the image of the virtual machine is _incredibly small_ or **enormously large**, then the reason is the DPI-setting of the VM, which does not fit to your monitor. You can change that scaling in the VirtualBox-Window under "View" -> "Virtual Monitor 1".
 * If the mouse "doesn't work", i.e., you can't click in a certain rectangle in the top left corner (try it out, it's likely that you _can_ click in the bottom right quarter), then this is a known bug. Most likely the VirtualBox Client-Tools for Drag and Drop or Shared Clipboard have crashed.You can either
