@@ -13,7 +13,7 @@ For the practical exercises of this training I have prepared everything you need
 # Step by Step
 
 1. Download the current version of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for your host operating system and install it. Do you only have a Mac with ARM processor? No problem, please contact us, we've got a solution for this as well.
-2. Download the [virtual machine image](https://vulnerads.de/vm/) (**ca. 15 GB**).
+2. Download the [virtual machine image](https://vulnerads.de/vm/) (**ca. 18 GB**).
 3. Import the downloaded VM into VirtualBox. The VM needs an appropriate amount of memory. Appropriate? I suggest > 10GB, but it must not take more than roughly half of your total memory, to spare some bytes for your host operating system.
 4. Now you can go ahead and boot into the machine. It should boot Kali Linux and you should be automatically logged in. Should something unexpected happen and you need the username and password, it's simply `kali` and `kali`. On boot you will see Firefox and IntelliJ IDEA are automatically started.
 5. Please verify that your virtual machine is able to access the internet from the browser, as this is a requirement for some of the exercises. You can open [https://www.github.com](https://www.github.com) from Chromium and Firefox to make sure everything works. If you are behind a company proxy, it might be necessary to adjust settings in the browsers. Access from the operating system, terminal, IDE, etc. is not necessary.
