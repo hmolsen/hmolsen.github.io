@@ -13,7 +13,7 @@ For the practical exercises of this training I have prepared everything you need
 # Step by Step
 
 1. Download the current version of [VirtualBox](https://www.virtualbox.org/wiki/Downloads) for your host operating system and install it. Do you only have a Mac with ARM processor? No problem, please contact us, we've got a solution for this as well.
-2. Download the [virtual machine image](https://vulnerads.de/vm/) (**ca. 18 GB**).
+2. Download the [virtual machine image](https://vulnerads.de/vm/) (**ca. 13 GB**).
 3. Import the downloaded VM into VirtualBox. The VM needs an appropriate amount of memory. Appropriate? I suggest > 10GB, but it must not take more than roughly half of your total memory, to spare some bytes for your host operating system.
 4. Now you can go ahead and boot into the machine. It should boot Kali Linux and you should be automatically logged in. Should something unexpected happen and you need the username and password, it's simply `kali` and `kali`. On boot you will see Firefox and IntelliJ IDEA are automatically started.
 5. Please verify that your virtual machine is able to access the internet from the browser, as this is a requirement for some of the exercises. You can open [https://www.github.com](https://www.github.com) from Chromium and Firefox to make sure everything works. If you are behind a company proxy, it might be necessary to adjust settings in the browsers. Access from the operating system, terminal, IDE, etc. is not necessary.
@@ -36,7 +36,7 @@ The following steps are not necessary, if you are participating in the training 
 
 ## General Troubleshooting
 
-* If the machine stays completely black on booting, then one reason is an older VirtualBox Version. Please make sure that you have installed the latest VirtualBox version! The machine was created using VirtualBox 7.0.14 and is 100% incompatible to VirtualBox 5.x, but sometimes I also see issues with older VirtualBox 6.1.x versions.
+* If the machine stays completely black on booting, then one reason is an older VirtualBox Version. Please make sure that you have installed the latest VirtualBox version! The machine was created using VirtualBox 7.1.6 and is 100% incompatible to VirtualBox 5.x, but sometimes I also see issues with older VirtualBox 6.1.x versions.
 * If the image of the virtual machine is unstable, possibly flickering, it sometimes helps to change the graphics adapter in the VM-Settings, e.g., to `VBoxSVGA`.
 * If the image of the virtual machine is _incredibly small_ or **enormously large**, then the reason is the DPI-setting of the VM, which does not fit to your monitor. You can change that scaling in the VirtualBox-Window under "View" -> "Virtual Monitor 1".
 * If the mouse "doesn't work", i.e., you can't click in a certain rectangle in the top left corner (try it out, it's likely that you _can_ click in the bottom right quarter), then this is a known bug. Most likely the VirtualBox Client-Tools for Drag and Drop or Shared Clipboard have crashed.You can either
@@ -55,6 +55,7 @@ The following steps are not necessary, if you are participating in the training 
 
 ## Troubleshooting for Windows-Hosts
 
+* When starting the VM you'll get the error Error In supR3HardenedWinReSpawn: NtCreateFile(\Device\VBoxDrvStub) failed: 0xc0000034 STATUS_OBJECT_NAME_NOT_FOUND (0 retries) (rc=-101). That might happen after updating VirtualBox. The error message says: "Rebooting may actually help", and from my experience: Rebooting may actually help. Reboot your PC. Yep, gotta do it.
 * If the machine is crazy (!) slow, then you need to disable Hyper-V on your Windows Host. You can find information [here](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) or [here](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html).
 * If the machine is still running slow, then it is highly likely that Hyper-V is still activated. It needs to be deactivated.
 * If you made sure that Hyper-V is not running, and the machine is still incredibly slow, then I it could be that Hyper-V is actually still running. Trust me. I've been there :-). You can open `services.msc` to verify that _none_ of the Hyper-V services is running:

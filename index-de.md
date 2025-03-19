@@ -13,7 +13,7 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
 # Schritt für Schritt
 
 1. Lade dir die aktuelle Version von [VirtualBox](https://www.virtualbox.org/wiki/Downloads) für dein Betriebssystem herunter und installiere es. Du hast nur einen Mac mit ARM-Prozessor zur Verfügung? Dann melde dich bitte bei uns, dafür haben wir natürlich auch eine Lösung.
-2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/) herunter (**ca. 18 GB**).
+2. Lade dir die [virtuelle Maschine](https://vulnerads.de/vm/) herunter (**ca. 13 GB**).
 3. Importiere die heruntergeladene VM in VirtualBox. Achte darauf, dass der virtuellen Machine möglichst viel, aber nicht zu viel Arbeitsspeicher zugewiesen ist. >10GB wären optimal, allerdings solltest du nicht viel mehr als die Hälfte deines Host-Arbeitsspeichers an die virtuelle Maschine vergeben.
 4. Jetzt kannst du die Maschine starten. Sie sollte in Kali Linux booten und automatisch eingeloggt sein. Falls etwas nicht klappt: Der Benutzername ist `kali` und das Passwort `kali`. Beim Systemstart werden auch Firefox und IntelliJ IDEA automatisch gestartet.
 5.  Bitte prüfe, dass aus der virtuellen Maschine Zugriff auf das Internet besteht, da einige Übungen dies voraussetzen. Öffnet hierzu beispielsweise [https://www.github.com](https://www.github.com) aus den Browsern Chromium und Firefox der virtuellen Maschine heraus. Gegebenenfalls passt bitte die Netzwerkadaptereinstellungen in VirtualBox oder die Proxy-Settings entsprechend der IT eures Unternehmens an. Ein Internetzugriff aus dem Betriebssystem, z.B. von der Kali-Konsole, ist nicht erforderlich.
@@ -35,7 +35,7 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
 
 ## Generelles Troubleshooting
 
-* Wenn die Maschine beim Starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version 7.0.x von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 7.0.14.
+* Wenn die Maschine beim Starten einfach schwarz bleibt, dann hast du vermutlich nicht die aktuellste Version 7.1.x von VirtualBox heruntergeladen. Insbesondere mit VirtualBox 5.x ist die Maschine inkompatibel, aber auch bei 6.1.x gibt es ab und zu Schwierigkeiten. Erstellt habe ich die Maschine mit VirtualBox 7.1.6.
 * Wenn das Bild in der virtuellen Maschine flackert, dann hilft es manchmal den Grafikadapter umzustellen, zum Beispiel auf VBoxSVGA.
 * Wenn das Bild in der virtuellen Maschine _unfassbar klein_ oder **wahnsinnig groß** ist, dann liegt das an den DPI des verwendeten Bildschirms. Die Skalierung der virtuellen Maschine kannst du im VirtualBox-Fenster unter "Anzeige" -> "Virtueller Monitor 1" einstellen.
 * Wenn in der virtuellen Maschine "die Maus nicht geht", du also nicht klicken kannst, dann ist das vermutlich die linke obere Ecke der VM, in die du nicht klicken kannst. Vermutlich kannst du unten rechts noch klicken. Dies ist ein bekannter Bug in den VirtualBox Client Tools für Drag-und-Drop und geteiltes Clipboard. Du kannst entweder
@@ -55,6 +55,7 @@ Für diese Schulungen habe ich dir eine virtuelle Maschine für Oracle VirtualBo
 
 ## Troubleshooting für Windows-Hosts
 
+* Beim Starten kommt der Fehler Error In supR3HardenedWinReSpawn: NtCreateFile(\Device\VBoxDrvStub) failed: 0xc0000034 STATUS_OBJECT_NAME_NOT_FOUND (0 retries) (rc=-101). Das kann passieren, nachdem du VirtualBox gerade geupdatet hast. In der Fehlermeldung steht: "Rebooting my actually help", und meine Erfahrung sagt: Neustarten wird helfen. Den Rechner. Ja, da musst du jetzt durch.
 * Wenn die Maschine furchtbar (!) langsam läuft, dann musst du Hyper-V abschalten. Infos bekommst du zum Beispiel [hier](https://support.microsoft.com/en-us/help/3204980/virtualization-applications-do-not-work-together-with-hyper-v-device-g) oder [hier](https://www.tenforums.com/tutorials/139405-run-hyper-v-virtualbox-vmware-same-computer.html).
 * Wenn die Maschine dann immer noch langsam läuft, dann ist mit an Sicherheit grenzender Wahrscheinlichkeit Hyper-V noch an. Das muss aber aus sein.
 * Wenn sichergestellt ist, dass Hyper-V aus ist, die Maschine aber immer noch langsam läuft, dann ist vermutlich Hyper-V doch nicht aus. Glaubt mir. Ich spreche da aus Erfahrung :-). Schau mal in `services.msc` nach, ob wirklich _alle_ Hyper-V Dienste nicht laufen.
